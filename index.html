@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Cid Rosado - Menu Principal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #fff5e6;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #ff7700;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .category {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 5px solid #ff7700;
+        }
+        
+        .category-title {
+            color: #ff7700;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #ffcc99;
+            display: flex;
+            align-items: center;
+        }
+        
+        .category-title::before {
+            content: "◆";
+            margin-right: 10px;
+            color: #ff7700;
+        }
+        
+        .link-list {
+            list-style-type: none;
+        }
+        
+        .link-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #fff9f0;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border-left: 3px solid #ffaa33;
+        }
+        
+        .link-item:hover {
+            background-color: #fff0dd;
+            transform: translateX(5px);
+        }
+        
+        .link-item a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .link-item a:hover {
+            color: #ff7700;
+        }
+        
+        .link-item a::before {
+            content: "➤";
+            margin-right: 10px;
+            color: #ff7700;
+        }
+        
+        .link-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+            margin-left: 25px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .category {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">📚</div>
+            <h1>Biblioteca Cid Rosado</h1>
+            <p>Portal de acesso aos sistemas da biblioteca</p>
+        </header>
+        
+        <section class="category">
+            <h2 class="category-title">Páginas Públicas</h2>
+            <ul class="link-list">
+                <li class="link-item">
+                    <a href="https://bibliotecacidrosado.github.io/acervofisico/" target="_blank">
+                        Biblioteca Cid Rosado - Acervo Físico
+                    </a>
+                    <div class="link-description">Acesso ao catálogo de livros físicos disponíveis</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://bibliotecacidrosado.github.io/acervovirtual/" target="_blank">
+                        Biblioteca Cid Rosado - Acervo Virtual
+                    </a>
+                    <div class="link-description">Acesso aos materiais digitais e recursos online</div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="category">
+            <h2 class="category-title">Páginas Administrativas - Acesso Restrito</h2>
+            <ul class="link-list">
+                <li class="link-item">
+                    <a href="https://script.google.com/a/macros/educar.rn.gov.br/s/AKfycbxVVmPNqfy07hq8lahKytRci2gjgM2-SDB5kjYksxTNWCLCZav_tdQw00WP6mf5PYWy/exec" target="_blank">
+                        Relatório Empréstimos
+                    </a>
+                    <div class="link-description">Relatórios e estatísticas de empréstimos</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://script.google.com/a/macros/educar.rn.gov.br/s/AKfycbxGNp5QJKXLKrH7xkaqwKU_LmNBbkMeDticEf3o1k9huZOwEDtQFfyPgybwUHOxSkIl3A/exec" target="_blank">
+                        Registros de Empréstimo/Devolução/Renovação
+                    </a>
+                    <div class="link-description">Sistema de gestão de transações de livros</div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="category">
+            <h2 class="category-title">Formulários</h2>
+            <ul class="link-list">
+                <li class="link-item">
+                    <a href="https://forms.gle/iaXJba5uG2SCyfuU6" target="_blank">
+                        Formulário para Cadastro de Livros no Acervo Físico
+                    </a>
+                    <div class="link-description">Formulário para inclusão de novos livros no acervo físico</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://forms.gle/8SrVahU119jTcv9dA" target="_blank">
+                        Formulário para Cadastro de Livros no Acervo Virtual
+                    </a>
+                    <div class="link-description">Formulário para inclusão de novos materiais no acervo virtual</div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="category">
+            <h2 class="category-title">Tutoriais</h2>
+            <ul class="link-list">
+                <li class="link-item">
+                    <a href="https://github.com/bibliotecacidrosado/acervofisico?tab=readme-ov-file#-tutorial-como-cadastrar-livros-no-acervo-f%C3%ADsico" target="_blank">
+                        Tutorial Cadastro de Livros no Acervo Físico
+                    </a>
+                    <div class="link-description">Instruções para cadastro de livros no sistema físico</div>
+                </li>
+                <li class="link-item">
+                    <a href="https://github.com/bibliotecacidrosado/acervovirtual?tab=readme-ov-file#-tutorial-como-contribuir-com-o-acervo-virtual" target="_blank">
+                        Tutorial Cadastro de Livros no Acervo Virtual
+                    </a>
+                    <div class="link-description">Instruções para cadastro de materiais no sistema virtual</div>
+                </li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>Biblioteca Cid Rosado &copy; 2025. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
